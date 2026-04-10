@@ -1,0 +1,4 @@
+models:
+  - name: bDates
+    config:
+        materialized: view
