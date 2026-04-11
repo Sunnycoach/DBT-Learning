@@ -6,6 +6,6 @@ sunny_dbt_learning:
       http_path: /sql/1.0/warehouses/15d269b786421247
       schema: default
       threads: 1
-      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      token: 
       type: databricks
   target: dev

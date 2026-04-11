@@ -1,3 +1,3 @@
-{{config(materialized = 'view')}}
+{{config(materialized = 'view', schema='testconfig')}}
 
 select * from {{source('source', 'fact_sales')}}
