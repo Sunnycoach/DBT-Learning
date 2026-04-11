@@ -34,6 +34,12 @@ models:
     # Config indicated by + and applies to all files under models/example/
     raw:
       +materialized: table
+    refined:
+      +materialized: view
+      schema: refined
+    produced:
+      +materialized: table
+      schema: produced
 
 seeds:
   sunny_dbt_learning:
