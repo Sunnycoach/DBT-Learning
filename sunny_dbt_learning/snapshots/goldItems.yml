@@ -1,0 +1,10 @@
+snapshots:
+    - name: goldItems
+      relation: ref('producedItems')
+      config:
+        schema: produced
+        database: dbt-catalog
+        unique_key: id
+        strategy: timestamp
+        updated_at: updatedDate
+        dbt_valid_to_current: "to_date('9999-12-31')"

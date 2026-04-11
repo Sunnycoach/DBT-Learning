@@ -9,3 +9,9 @@ sources:
       - name: dim_store
       - name: fact_sales
       - name: fact_returns
+
+  - name: default
+    database: dbt-catalog  
+    schema: default  
+    tables:
+      - name: items
