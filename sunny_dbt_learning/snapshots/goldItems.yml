@@ -3,7 +3,7 @@ snapshots:
       relation: ref('producedItems')
       config:
         schema: produced
-        database: dbt-catalog
+        database: '{{ target.catalog }}' 
         unique_key: id
         strategy: timestamp
         updated_at: updatedDate

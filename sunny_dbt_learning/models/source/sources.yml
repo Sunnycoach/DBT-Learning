@@ -1,6 +1,6 @@
 sources:
   - name: source
-    database: dbt-catalog  
+    database: '{{ target.catalog }}' 
     schema: source  
     tables:
       - name: dim_customer
@@ -11,7 +11,7 @@ sources:
       - name: fact_returns
 
   - name: default
-    database: dbt-catalog  
+    database: '{{ target.catalog }}'  
     schema: default  
     tables:
       - name: items
