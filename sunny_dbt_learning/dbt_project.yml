@@ -34,3 +34,8 @@ models:
     # Config indicated by + and applies to all files under models/example/
     raw:
       +materialized: table
+
+seeds:
+  sunny_dbt_learning:
+    # Config indicated by + and applies to all files under seeds/
+    +schema: bronze

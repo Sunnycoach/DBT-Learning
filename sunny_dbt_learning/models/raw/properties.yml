@@ -5,6 +5,9 @@ models:
         tests:
           - not_null
           - unique
+      - name: list_price
+        tests:
+          - customGenericTest
       - name: department
         data_test:
            - accepted_values:
